@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvImporter", "CsvImporter\CsvImporter.csproj", "{17329072-5B9A-44ED-9B5B-9250BF026C21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvImporter.Application", "CsvImporter\CsvImporter.Application.csproj", "{17329072-5B9A-44ED-9B5B-9250BF026C21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvImporter.Domain", "CvsImporter.Domain\CsvImporter.Domain.csproj", "{C7294118-AE25-4C6D-B39B-7C89F93994C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvImporter.Infraestructure", "CsvImporter.Infraestructure\CsvImporter.Infraestructure.csproj", "{60377473-6357-403D-AEB6-5ABE3F6FACCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{17329072-5B9A-44ED-9B5B-9250BF026C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17329072-5B9A-44ED-9B5B-9250BF026C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17329072-5B9A-44ED-9B5B-9250BF026C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7294118-AE25-4C6D-B39B-7C89F93994C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7294118-AE25-4C6D-B39B-7C89F93994C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7294118-AE25-4C6D-B39B-7C89F93994C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7294118-AE25-4C6D-B39B-7C89F93994C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60377473-6357-403D-AEB6-5ABE3F6FACCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60377473-6357-403D-AEB6-5ABE3F6FACCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60377473-6357-403D-AEB6-5ABE3F6FACCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60377473-6357-403D-AEB6-5ABE3F6FACCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

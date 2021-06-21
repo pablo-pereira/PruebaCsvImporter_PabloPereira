@@ -35,7 +35,7 @@ namespace CsvImporter.Domain.Services
         /// <param name="stocks">Lista de objetos StockModel.</param>
         /// <param name="batchSize">Cantidad de registros a insertar.</param>
         /// <returns></returns>
-        public async void ProcessFileAsynk(string source, int batchSize)
+        public async Task<int> ProcessFileAsync(string source, int batchSize)
         {
             try
             {
@@ -57,10 +57,12 @@ namespace CsvImporter.Domain.Services
                     timeElapsed.Stop();
                     _logger.LogInformation($"Fin del proceso exitosamente en {timeElapsed.ElapsedMilliseconds} ms.");
                 }
+                return rowsInserted;
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Ocurrio un error.");
+                return 0;
             }
         }
 
@@ -107,7 +109,7 @@ namespace CsvImporter.Domain.Services
             return totalInserted;
         }
 
-        private StockModel RowToStockModel(string row)
+        public StockModel RowToStockModel(string row)
         {
             string[] rowField = row.Split(';');
 

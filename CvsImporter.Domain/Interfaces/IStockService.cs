@@ -1,7 +1,9 @@
-﻿namespace CsvImporter.Domain.Interfaces
+﻿using System.Threading.Tasks;
+
+namespace CsvImporter.Domain.Interfaces
 {
     public interface IStockService
     {
-        void ProcessFileAsynk(string source, int batchSize);
+        Task<int> ProcessFileAsync(string source, int batchSize);
     }
 }

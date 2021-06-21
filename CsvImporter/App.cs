@@ -28,7 +28,7 @@ namespace CsvImporter.Application
                 _logger.LogInformation("Iniciando...");
                 if (_appSettingsValidator.IsValid())
                 {
-                    _stockService.ProcessFileAsynk(_config.GetValue<string>("SourceFile"), _config.GetValue<int>( "BatchSize"));                
+                    _stockService.ProcessFileAsync(_config.GetValue<string>("SourceFile"), _config.GetValue<int>( "BatchSize"));                
                 }
             }
             catch (Exception ex)
